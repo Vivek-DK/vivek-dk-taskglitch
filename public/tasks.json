@@ -12,7 +12,7 @@
     "id": "z-2001",
     "title": "Demo scheduling #1",
     "revenue": 1520,
-    "timeTaken": 1,
+    "timeTaken": 0,
     "priority": "High",
     "status": "In Progress"
   },

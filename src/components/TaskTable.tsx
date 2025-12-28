@@ -30,7 +30,9 @@ export default function TaskTable({ tasks, onAdd, onUpdate, onDelete }: Props) {
     setOpenForm(true);
   };
 
-  const handleSubmit = (value: Omit<Task, 'id'> & { id?: string }) => {
+  const handleSubmit = (
+  value: Omit<Task, 'id' | 'createdAt' | 'completedAt'> & { id?: string }
+) => {
     if (value.id) {
       const { id, ...rest } = value as Task;
       onUpdate(id, rest);
